@@ -2,17 +2,14 @@
 @import "./base/reset";
 @import "./base/colors";
 @import "./base/_tools";
+@import "./base/common";
 @import "./components/_header";
+@import "./components/categories";
+@import "./components/sort";
+@import "./components/product";
 
 body {
 	font-family: "Mulish", sans-serif;
 	font-size: 16px;
 	background-color: var(--color-yellow);
-}
-
-.wrapper {
-	max-width: 1400px;
-	margin: 50px auto;
-	background-color: var(--color-white);
-	border-radius: 12px;
 }

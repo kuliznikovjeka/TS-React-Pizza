@@ -4,7 +4,7 @@ export default function Header() {
       <div className="header__container">
         <a href="#" className="header__logo logo">
           <div className="logo__img">
-            <img src={require('../img/header/logo.jpg')} alt="Logo" />
+            <img src="./img/header/logo.jpg" alt="Логотип" />
           </div>
           <div className="logo__body">
             <h2 className="logo__title">REACT PIZZA</h2>

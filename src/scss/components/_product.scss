@@ -1,0 +1,125 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	// .product__img
+
+	&__img {
+		justify-content: center;
+		align-self: center;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	// .product__name
+
+	&__name {
+		font-weight: 800;
+		font-size: 20px;
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .product__characteristics
+
+	&__characteristics {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .product__actions
+
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 10px;
+	}
+
+	// .product__price
+
+	&__price {
+		font-weight: 800;
+		font-size: 22px;
+	}
+
+	&__count {
+		color: var(--color-white);
+		display: inline-block;
+		margin-left: 8px;
+		background-color: var(--color-orange);
+		padding: 2px 7px;
+		border-radius: 50px;
+		font-size: 14px;
+	}
+
+	// .product__btn-order
+
+	&__btn-order {
+		font-weight: 700;
+		font-size: 16px;
+		// color: var(--color-white);
+		// background-color: var(--color-orange);
+		background-color: var(--color-white);
+		color: var(--color-orange);
+		padding: 8px 12px;
+		border: 1px solid var(--color-orange);
+		border-radius: 30px;
+		span {
+			display: inline-block;
+			&:first-child {
+				margin-right: 5px;
+			}
+		}
+
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--hover-color-orange);
+				color: var(--color-white);
+			}
+		}
+	}
+}
+.characteristics-product {
+	background-color: var(--color-grey-platinum);
+	padding: 8px;
+	border-radius: 10px;
+	// .characteristics-product__row
+
+	&__row {
+		display: flex;
+		column-gap: 15px;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+
+	// .characteristics-product__btn
+
+	&__btn {
+		font-weight: 700;
+		font-size: 16px;
+		width: 100%;
+		border-radius: 5px;
+		padding: 5px 15px;
+		background-color: var(--color-grey-light);
+		transition: background-color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--color-white);
+			}
+		}
+	}
+}
+.active-characteristic-product {
+	background-color: var(--color-white);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+}
